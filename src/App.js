@@ -9,7 +9,7 @@ const App = () => {
     <HashRouter>
       <div style={{ backgroundColor: 'gray', height: '100vh'}}>
         <Routes>
-          <Route exact path="/" Component={Dashboard} />
+          <Route path="/" element={<Dashboard/>} />
           <Route path="/products" Component={ProductsManagement} />
           <Route path="/orders" Component={OrdersManagement} />
         </Routes>

@@ -1,6 +1,3 @@
-Sure! Here's a README document template for your simplified ERP front-end application:
-
----
 
 # SimpleERP Front-end Application
 

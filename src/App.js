@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import ProductsManagement from './components/ProductsManagement';
 import OrdersManagement from './components/OrdersManagement';
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <div style={{ backgroundColor: 'gray', height: '100vh'}}>
         <Routes>
           <Route exact path="/" Component={Dashboard} />
@@ -14,7 +14,7 @@ const App = () => {
           <Route path="/orders" Component={OrdersManagement} />
         </Routes>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
